@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+}
+.logo{
+    margin: 20px 20px;
+    font-size: 35px;
+}
+.nav-links{
+    margin: 20px 20px;
+    display: flex;
+    text-decoration: none;
+
+}
+.nav-links a{
+    margin-left: .5em;
+    color: red;
+    text-decoration:dotted;
+    font-size: 25px;
+}
+.hire-btn{
+
+    background:#d51b1b;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.hire:hover{
+
+    background:#ff2d2d;
+
+    transform:translateY(-5px);
+}

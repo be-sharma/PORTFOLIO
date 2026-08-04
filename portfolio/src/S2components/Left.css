@@ -1,0 +1,667 @@
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.about-section{
+    width:100%;
+    min-height:100vh;
+    padding:100px 8%;
+    position:relative;
+    background:#050505;
+    overflow:hidden;
+}
+
+/* Red Glow Background */
+
+.about-section::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#ff2020;
+    right:-180px;
+    top:-120px;
+    border-radius:50%;
+    filter:blur(180px);
+    opacity:.18;
+    z-index:0;
+}
+
+/* ===========================
+   SECTION HEADING
+=========================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+    position:relative;
+    z-index:2;
+}
+
+.section-title span{
+    color:#ff2d2d;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
+    position:relative;
+}
+
+.section-title span::before,
+.section-title span::after{
+    content:"";
+    position:absolute;
+    width:50px;
+    height:2px;
+    background:#ff2d2d;
+    top:50%;
+}
+
+.section-title span::before{
+    right:70px;
+}
+
+.section-title span::after{
+    left:70px;
+}
+
+.section-title h1{
+    margin-top:20px;
+    font-size:58px;
+    color:#ffffff10;
+    letter-spacing:10px;
+    font-weight:800;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.about-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:70px;
+    position:relative;
+    z-index:2;
+}
+
+/* ===========================
+   LEFT SIDE
+=========================== */
+
+.about-left{
+    width:45%;
+}
+
+.small-title{
+    color:#ff2d2d;
+    font-size:17px;
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+
+.about-left h2{
+    font-size:68px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.about-left h2 span{
+    color:#ff2d2d;
+}
+
+/* Red Underline */
+
+.red-line{
+    width:85px;
+    height:4px;
+    background:#ff2d2d;
+    border-radius:20px;
+    margin:35px 0;
+    box-shadow:0 0 18px #ff2d2d;
+}
+
+/* Description */
+
+.about-text{
+    color:#b8b8b8;
+    font-size:20px;
+    line-height:38px;
+    max-width:560px;
+}
+
+/* Signature */
+
+.signature{
+    margin-top:50px;
+    color:#ff4b4b;
+    font-size:55px;
+    font-family:cursive;
+    font-weight:400;
+}/* ===========================
+   INFO BOX
+=========================== */
+
+.info-box{
+    margin-top:45px;
+    width:100%;
+    border:1px solid rgba(255,255,255,.08);
+    background:#111;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.info-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.info-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:28px;
+    border:1px solid rgba(255,255,255,.05);
+    transition:.35s;
+}
+
+.info-card:hover{
+    background:#171717;
+    transform:translateY(-5px);
+}
+
+.info-card svg{
+    width:55px;
+    height:55px;
+    color:#ff2d2d;
+    padding:14px;
+    border-radius:12px;
+    background:#0d0d0d;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.info-card small{
+    display:block;
+    color:#8f8f8f;
+    font-size:13px;
+    letter-spacing:1px;
+    margin-bottom:5px;
+}
+
+.info-card h4{
+    font-size:23px;
+    font-weight:600;
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.about-right{
+    width:55%;
+}
+
+.about-right .small-title{
+    margin-bottom:25px;
+}
+
+/* ===========================
+   SKILL CARD
+=========================== */
+
+.skill-card{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    width:100%;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    border-radius:16px;
+
+    padding:22px 28px;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(255,45,45,.4);
+
+    box-shadow:0 0 25px rgba(255,45,45,.12);
+}
+
+.skill-icon{
+
+    font-size:42px;
+
+    min-width:45px;
+}
+
+/* Individual Colors */
+
+.html{
+    color:#E44D26;
+}
+
+.css{
+    color:#1572B6;
+}
+
+.js{
+    color:#F7DF1E;
+}
+
+.react{
+    color:#61DAFB;
+}
+
+.node{
+    color:#68A063;
+}
+
+.git{
+    color:#F34F29;
+}
+
+/* Skill Name */
+
+.skill-card span{
+
+    width:150px;
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+.progress{
+
+    flex:1;
+
+    height:7px;
+
+    background:#2a2a2a;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+.fill{
+
+    height:100%;
+
+    background:#ff2d2d;
+
+    border-radius:30px;
+
+    position:relative;
+
+    box-shadow:0 0 18px #ff2d2d;
+}
+
+.fill::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-5px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    box-shadow:0 0 12px #ff2d2d;
+}
+
+/* Progress Width */
+
+.html-fill{
+    width:95%;
+}
+
+.css-fill{
+    width:90%;
+}
+
+.js-fill{
+    width:85%;
+}
+
+.react-fill{
+    width:80%;
+}
+
+.node-fill{
+    width:70%;
+}
+
+.git-fill{
+    width:80%;
+}
+
+/* Percentage */
+
+.skill-card p{
+
+    width:55px;
+
+    text-align:right;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#fff;
+}
+/* ===========================
+   TECH STACK
+=========================== */
+
+.tech-stack{
+    margin-top:40px;
+    padding:30px;
+    background:#111;
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:18px;
+    transition:.35s;
+}
+
+.tech-stack:hover{
+    border-color:rgba(255,45,45,.4);
+    box-shadow:0 0 30px rgba(255,45,45,.12);
+}
+
+.tech-stack h3{
+    font-size:24px;
+    margin-bottom:25px;
+    letter-spacing:1px;
+    color:#fff;
+}
+
+.tech-icons{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.tech-item{
+    background:#181818;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:15px;
+    padding:25px 15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    transition:.35s;
+    cursor:pointer;
+}
+
+.tech-item:hover{
+    transform:translateY(-8px);
+    border-color:#ff2d2d;
+    background:#1d1d1d;
+    box-shadow:0 0 20px rgba(255,45,45,.18);
+}
+
+.tech-item svg{
+    font-size:42px;
+    color:#ff2d2d;
+    margin-bottom:12px;
+}
+
+.tech-item span{
+    font-size:15px;
+    color:#d8d8d8;
+    font-weight:500;
+}
+
+/* ===========================
+   FLOATING GLOW
+=========================== */
+
+.about-section::after{
+    content:"";
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    left:-120px;
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:#ff2d2d;
+
+    filter:blur(150px);
+
+    opacity:.12;
+
+    z-index:0;
+}
+
+/* ===========================
+   SMOOTH TRANSITION
+=========================== */
+
+.about-left,
+.about-right,
+.info-card,
+.skill-card,
+.tech-item{
+    transition:all .35s ease;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+.about-container{
+    flex-direction:column;
+}
+
+.about-left,
+.about-right{
+    width:100%;
+}
+
+.about-left h2{
+    font-size:55px;
+}
+
+.section-title h1{
+    font-size:46px;
+}
+
+.tech-icons{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.about-section{
+    padding:80px 6%;
+}
+
+.section-title h1{
+    font-size:34px;
+    letter-spacing:4px;
+}
+
+.section-title span{
+    font-size:22px;
+}
+
+.about-left h2{
+    font-size:42px;
+}
+
+.about-text{
+    font-size:17px;
+    line-height:30px;
+}
+
+.info-box{
+    grid-template-columns:1fr;
+}
+
+.skill-card{
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-card span{
+    width:100%;
+}
+
+.progress{
+    width:100%;
+}
+
+.skill-card p{
+    width:100%;
+    text-align:left;
+}
+
+.tech-icons{
+    grid-template-columns:1fr 1fr;
+}
+
+.signature{
+    font-size:42px;
+}
+
+}
+
+@media(max-width:500px){
+
+.about-section{
+    padding:70px 5%;
+}
+
+.about-left h2{
+    font-size:34px;
+}
+
+.section-title h1{
+    font-size:28px;
+}
+
+.tech-icons{
+    grid-template-columns:1fr;
+}
+
+.tech-item{
+    padding:22px;
+}
+
+.skill-icon{
+    font-size:34px;
+}
+
+.info-card{
+    padding:22px;
+}
+
+.info-card h4{
+    font-size:18px;
+}
+
+.about-text{
+    font-size:16px;
+    line-height:28px;
+}
+
+}
+
+/* ===========================
+   SCROLL ANIMATION READY
+=========================== */
+
+.about-left{
+    animation:slideLeft .9s ease;
+}
+
+.about-right{
+    animation:slideRight .9s ease;
+}
+
+@keyframes slideLeft{
+
+from{
+    opacity:0;
+    transform:translateX(-60px);
+}
+
+to{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
+
+@keyframes slideRight{
+
+from{
+    opacity:0;
+    transform:translateX(60px);
+}
+
+to{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
