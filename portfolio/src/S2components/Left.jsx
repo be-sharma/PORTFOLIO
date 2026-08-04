@@ -30,15 +30,6 @@ function Left() {
   return (
     <section className="about-section" id="about">
 
-      {/* Section Heading */}
-
-      <div className="section-title">
-
-        <span>02</span>
-
-        <h1>ABOUT ME & SKILLS</h1>
-
-      </div>
 
       <div className="about-container">
 
