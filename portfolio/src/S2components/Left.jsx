@@ -15,10 +15,10 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaCode,
 } from "react-icons/fa";
 
 import {
-  SiVisualstudiocode,
   SiFigma,
   SiTailwindcss,
   SiBootstrap,
@@ -251,7 +251,7 @@ function Left() {
             <div className="tech-icons">
 
               <div className="tech-item">
-                <SiVisualstudiocode />
+                <FaCode />
                 <span>VS Code</span>
               </div>
 
