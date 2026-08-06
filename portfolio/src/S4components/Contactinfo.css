@@ -1,0 +1,180 @@
+.contact-info{
+    width:100%;
+    max-width:480px;
+    color:#fff;
+}
+
+.contact-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.contact-top .line{
+    width:60px;
+    height:2px;
+    background:#ff2d2d;
+}
+
+.contact-top span{
+    color:#ff2d2d;
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+.contact-subtitle{
+    color:#ff2d2d;
+    letter-spacing:5px;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.contact-title{
+    font-size:72px;
+    font-weight:800;
+    line-height:1.05;
+    margin-bottom:25px;
+}
+
+.contact-title span{
+    color:#ff2d2d;
+}
+
+.contact-description{
+    color:#bdbdbd;
+    font-size:18px;
+    line-height:34px;
+    margin-bottom:35px;
+}
+
+.heading-line{
+    width:120px;
+    height:4px;
+    background:#ff2d2d;
+    border-radius:20px;
+    margin-bottom:45px;
+    box-shadow:0 0 20px rgba(255,45,45,.5);
+}
+
+/* ==========================
+   CONTACT ITEMS
+========================== */
+
+.contact-details{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    padding-bottom:22px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact-icon{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    color:#ff2d2d;
+    border:1px solid rgba(255,45,45,.3);
+    background:#111;
+    transition:.35s;
+}
+
+.contact-item:hover .contact-icon{
+    background:#ff2d2d;
+    color:#fff;
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(255,45,45,.4);
+}
+
+.contact-text span{
+    display:block;
+    color:#8b8b8b;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.contact-text h3{
+    font-size:24px;
+    font-weight:600;
+    color:#fff;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.contact-info{
+    max-width:100%;
+}
+
+.contact-title{
+    font-size:56px;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-title{
+    font-size:46px;
+}
+
+.contact-description{
+    font-size:16px;
+    line-height:30px;
+}
+
+.contact-icon{
+    width:60px;
+    height:60px;
+    font-size:24px;
+}
+
+.contact-text h3{
+    font-size:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.contact-top .line{
+    width:40px;
+}
+
+.contact-title{
+    font-size:38px;
+}
+
+.contact-subtitle{
+    font-size:16px;
+    letter-spacing:3px;
+}
+
+.contact-text h3{
+    font-size:18px;
+}
+
+.contact-item{
+    gap:15px;
+}
+
+}

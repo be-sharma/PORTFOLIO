@@ -40,10 +40,16 @@ function Hero() {
         </p>
 
         <div className="buttons">
-
-          <button className="hire">
-            Hire Me →
-          </button>
+          
+          <button  className="hire"
+                onClick={() =>
+                     document
+                 .getElementById("contact")
+                 .scrollIntoView({ behavior: "smooth" })
+                     }
+>
+              Hire Me
+            </button>
 
           <button className="cv">
             Download CV ↓

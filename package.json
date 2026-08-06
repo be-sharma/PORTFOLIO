@@ -6,5 +6,8 @@
     "dev": "npm run dev --prefix portfolio",
     "build": "npm run build --prefix portfolio",
     "preview": "npm run preview --prefix portfolio"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
   }
 }

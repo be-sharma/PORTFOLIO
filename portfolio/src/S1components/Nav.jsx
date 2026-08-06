@@ -15,10 +15,16 @@ function Navbar() {
         <li><a href="#contact">CONTACT</a></li>
       </ul>
 
-      <button className="hire-btn">
-        Hire Me
-        <span className="arrow">↗</span>
-      </button>
+      <button className="hire-btn"
+  onClick={() =>
+    document
+      .getElementById("contact")
+      .scrollIntoView({ behavior: "smooth" })
+  }
+>
+  Hire Me
+  <span className="arrow">↗</span>
+</button>
 
     </nav>
   );

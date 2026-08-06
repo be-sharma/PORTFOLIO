@@ -1,0 +1,103 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact-section{
+    width:100%;
+    min-height:100vh;
+    padding:100px 8%;
+    background:#050505;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ==========================
+   MAIN LAYOUT
+========================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    gap:70px;
+
+    align-items:start;
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ==========================
+   BACKGROUND GLOW
+========================== */
+
+.contact-glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(170px);
+
+    opacity:.12;
+
+    pointer-events:none;
+}
+
+.glow-1{
+
+    width:450px;
+    height:450px;
+
+    background:#ff2d2d;
+
+    top:-120px;
+    right:-150px;
+}
+
+.glow-2{
+
+    width:350px;
+    height:350px;
+
+    background:#ff2d2d;
+
+    bottom:-120px;
+    left:-100px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1100px){
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-section{
+
+    padding:80px 6%;
+}
+
+}
+
+@media(max-width:500px){
+
+.contact-section{
+
+    padding:70px 5%;
+}
+
+}

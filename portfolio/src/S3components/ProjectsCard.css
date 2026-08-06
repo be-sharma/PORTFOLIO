@@ -1,0 +1,166 @@
+.project-card{
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s ease;
+    position:relative;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff2d2d;
+    box-shadow:0 0 30px rgba(255,45,45,.2);
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+.project-image{
+    position:relative;
+    width:100%;
+    height:260px;
+    overflow:hidden;
+}
+
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.project-card:hover .project-image img{
+    transform:scale(1.08);
+}
+
+/* ==========================
+   OVERLAY
+========================== */
+
+.project-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.2)
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    opacity:0;
+    transition:.4s;
+}
+
+.project-card:hover .project-overlay{
+    opacity:1;
+}
+
+/* ==========================
+   ICON BUTTONS
+========================== */
+
+.icon-btn{
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    background:#ff2d2d;
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.icon-btn:hover{
+    transform:scale(1.12);
+    background:#fff;
+    color:#ff2d2d;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.project-content{
+    padding:25px;
+}
+
+.project-number{
+    color:#ff2d2d;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.project-content h2{
+    margin:12px 0;
+    font-size:28px;
+    font-weight:700;
+}
+
+.project-content p{
+    color:#bdbdbd;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   TECH TAGS
+========================== */
+
+.tech-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech-list span{
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    background:#1c1c1c;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:13px;
+
+    transition:.3s;
+}
+
+.tech-list span:hover{
+    background:#ff2d2d;
+    border-color:#ff2d2d;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.project-image{
+    height:220px;
+}
+
+.project-content h2{
+    font-size:24px;
+}
+
+}
