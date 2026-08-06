@@ -1,8 +1,8 @@
 import "./Contact.css";
 
-import ContactInfo from "./ContactInfo";
-import ContactForm from "./ContactForm";
-import SocialLinks from "./SocialLinks";
+import ContactInfo from "./Contactinfo.jsx";
+import ContactForm from "./ContactForm.jsx";
+import SocialLinks from "./SocialLinks.jsx";
 
 function Contact() {
   return (
