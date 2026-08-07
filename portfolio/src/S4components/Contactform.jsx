@@ -1,4 +1,4 @@
-import "./ContactForm.css";
+import "./Contactform.css";
 import { FaPaperPlane, FaArrowRight } from "react-icons/fa6";
 
 function ContactForm() {

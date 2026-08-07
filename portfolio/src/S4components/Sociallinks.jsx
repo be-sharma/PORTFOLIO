@@ -1,4 +1,4 @@
-import "./SocialLinks.css";
+import "./Sociallinks.css";
 
 import {
   FaGithub,
