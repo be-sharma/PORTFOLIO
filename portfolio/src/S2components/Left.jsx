@@ -19,7 +19,7 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiFigma,
+  SiReact,
   SiTailwindcss,
   SiBootstrap,
   SiFirebase,
@@ -247,8 +247,8 @@ function Left() {
               </div>
 
               <div className="tech-item">
-                <SiFigma />
-                <span>Figma</span>
+                <SiReact />
+                <span>React</span>
               </div>
 
               <div className="tech-item">

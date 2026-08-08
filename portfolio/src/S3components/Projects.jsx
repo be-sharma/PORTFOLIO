@@ -30,8 +30,6 @@ function Projects() {
 
       <div className="section-heading">
 
-        <span>03</span>
-
         <h1>FEATURED PROJECTS</h1>
 
         <p>

@@ -5,7 +5,7 @@
 .projects-section{
     width:100%;
     min-height:100vh;
-    padding:100px 8%;
+    padding:10px 8%;
     background:#050505;
     position:relative;
     overflow:hidden;
@@ -43,7 +43,7 @@
 
 .section-heading{
     text-align:center;
-    margin-bottom:70px;
+    margin-bottom:15px;
     position:relative;
     z-index:2;
 }
@@ -103,7 +103,7 @@
 
     gap:15px;
 
-    margin-bottom:60px;
+    margin-bottom:20px;
 
     position:relative;
 
@@ -112,7 +112,7 @@
 
 .filter-buttons button{
 
-    padding:12px 28px;
+    padding:12px 15px;
 
     border:none;
 
@@ -152,12 +152,14 @@
 ========================== */
 
 .projects-grid{
-
+    align-content: center;
+    height: 800px;
+    width: 100%;
     display:grid;
 
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
 
-    gap:35px;
+    gap:15px;
 
     position:relative;
 

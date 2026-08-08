@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
         <div className="project-overlay">
 
           <a
-            href={project.live}
+            href="https://portfolio-puce-chi-knl92vek3q.vercel.app/"
             target="_blank"
             rel="noreferrer"
             className="icon-btn"
@@ -24,7 +24,7 @@ function ProjectCard({ project }) {
           </a>
 
           <a
-            href={project.github}
+            href="https://github.com/be-sharma/PORTFOLIO"
             target="_blank"
             rel="noreferrer"
             className="icon-btn"
